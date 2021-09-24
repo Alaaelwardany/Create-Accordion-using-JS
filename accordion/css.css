@@ -1,0 +1,48 @@
+
+
+.container{
+    /* display: flex; */
+    width: 80%;
+    margin: 50px auto;
+}
+
+.accordion{
+    /* display: flex; */
+    width: 100%;
+    background-color: #eee;
+    font-size: 16px;
+    border: 0;
+    padding: 15px;
+    text-align: left;
+    cursor: pointer;
+    outline: 0;
+}
+.accordion:hover{
+    color: #ccc;
+}
+
+.accordion::after{
+    content: "+";
+    float: right;
+    font-weight: bold;
+    color: #777;
+}
+.active:after{
+    content:"-"
+}
+
+.desc{
+    padding: 0 15px;
+    /* display: none;  first logic*/
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+li {
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+}
